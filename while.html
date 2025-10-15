@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo While</title>
+</head>
+<body>
+    <input type="number" id="numero">
+    <button onclick="contar()">Contar</button>
+    <p id="resultado"></p>
+    <script>
+        function contar()
+        {
+            num = document.getElementById('numero').value;
+            i = 1;
+            texto = "";
+            while(i <= num)
+            {
+                texto += i + " ";
+                i++;
+            }
+            document.getElementById('resultado').innerHTML = texto;
+        }
+    </script>
+</body>
+</html>

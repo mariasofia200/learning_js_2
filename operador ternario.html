@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo Operador Ternario</title>
+</head>
+<body>
+    <input type="number" id="nota">
+    <button onclick="evaluar()">Evaluar</button>
+    <p id="resultado"></p>
+    <script>
+        function evaluar()
+        {
+            nota = document.getElementById('nota').value;
+            mensaje = (nota >= 3.0) ? "Aprobado" : "Reprobado";
+            document.getElementById('resultado').innerHTML = mensaje;
+        }
+    </script>
+</body>
+</html>
